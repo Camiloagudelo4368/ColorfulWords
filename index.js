@@ -9,6 +9,7 @@ output.innerHTML = slider.value; // Display the default slider value
 $(document).ready(function () {
   color = "";
   randomHSL();
+  // generateGradient();
   $("#divLabel").append(
     `<span class="spanText" style="Color: ${color}; font-family:'Impact','Charcoal',sans-serif;">Welcome<span/>`
   );

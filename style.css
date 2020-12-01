@@ -14,7 +14,7 @@ body {
   font-family: fantasy, cursive;
   font-family: Trattatello, fantasy;
   font-family: Snell Roundhand, cursive; */
-  font-size: 100pt;
+  font-size: 50pt;
   /* color: blue; */
   font-weight: 600;
 }
@@ -30,12 +30,12 @@ body {
 }
 
 #inpWord {
-  width: 200px;
+  width:100%;
   height: 25px;
 }
 
 #selFontWord {
-  width: 200px;
+  width: 85%;
   /* height: 30px !important; */
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 #myRange {
-  width: 300px;
+  width: 90%
 }
 
 #lblRange {
@@ -67,4 +67,10 @@ body {
 #fontWord {
   width: 200px;
   height: 25px;
+}
+
+@media screen and (max-width: 640px) {
+  #selFontWord {
+    width: 100%;    
+  }
 }
