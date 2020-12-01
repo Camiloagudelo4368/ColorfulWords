@@ -17,7 +17,9 @@
   </head>
   <body>
     <div id="divInput">
-      <button id="printPage" class="btn btn-warning mr-5">Print</button>
+      <div class="text-right mr-4"><button class="btn btn-danger" id="btnClear">Clear</button></div>
+      <br/>
+      <!-- <button id="printPage" class="btn btn-warning mr-5">Print</button> -->
       <input id="inpWord" type="text" placeholder="Insert the word" />
       <!-- <label for="cars">Choose a car:</label> -->
 
@@ -96,9 +98,21 @@
           Yellowtail
         </option>
       </select>
-      <button class="btn btn-secondary" id="btnGenerateWord">
-        Generate Word
-      </button>
+      
+        <input
+          id="checkBoxFrozen"
+          type="checkbox"
+          className="custom-control-input"
+        ></input>
+        <label
+          className="custom-control-label activeLabel"
+          for="checkBoxFrozen"
+        >
+          Frozen
+        </label>
+        <button class="btn btn-secondary" id="btnGenerateWord">
+          Generate Word
+        </button>
       <!-- <button id="btnChangeColor">Change Color</button> -->
       <input
         type="range"
@@ -109,8 +123,9 @@
         id="myRange"
       />
       <span id="lblRange"></span>
-      <button class="btn btn-danger" id="btnClear">Clear</button>
+      
     </div>
+    <br />
     <br />
     <div id="divLabel">
       <!-- <span id="lblWord">Hannah</span> -->
@@ -118,6 +133,15 @@
     <!-- <br />
     <button id="btnSaveWord">Save Word</button>
     <br /> -->
+    <br/>
+
+    
+    <br/>
+    <div class="text-center">
+      <h3>choose your style and shoot a print screen.</h3>
+      <h5>Mac: press command+shift+4 and select.</h5>
+      <h5>Windows: press "prt sc" key.</h5>
+    </div>
     <div id="divSaved" hidden></div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

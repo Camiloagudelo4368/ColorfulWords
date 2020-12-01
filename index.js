@@ -57,16 +57,18 @@ $("#btnClear").on("click", () => {
   $("#divSaved").empty();
 });
 
+
 function wordGenerator() {
   var firstWord = $("#inpWord").val();
   var secondWord;
   $("#divLabel").empty();
 
-  var e = document.getElementById("selFontWord");
-  var valueText = e.options[e.selectedIndex].dataset.font;
+  var e = document.getElementById("checkBoxFrozen");
+  var selected = e.checked;
   // console.log("style1", valueText.dataset.font)
-  console.log("style", valueText);
+  console.log("checked", selected);
 
+if (!selected){
   for (let index = 0; index < firstWord.length; index++) {
     const _element = firstWord[index];
     color = "";
@@ -77,19 +79,21 @@ function wordGenerator() {
       `<span class="spanText" style="Color: ${color};background: ${color};
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;" id="spn${_element}">${_element}<span/>`
-      //   `<span class="spanText" style="Color: ${color}" id="spn${_element}">${_element}<span/>`
-    );
-    $("#divSaved").append(
-      `<span class="spanText" style="Color: ${color}" id="spn${_element}">${_element}<span/>`
-      //   `<span class="spanText" style="Color: ${color}" id="spn${_element}">${_element}<span/>`
-    );
+    );    
   }
-  $("#divSaved").append(`<br/>`);
-  if ($(".spanText").val() == "") {
-    $("#btnChangeColor").show();
-  } else {
-    $("#btnChangeColor").hide();
-  }
+}
+else{
+  $("#divLabel").append(
+    `<span class="spanText" style="Color: ${color};background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
+    font-family:'frozen',serif !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;" id="spn${firstWord}">${firstWord}<span/>`
+  );
+}
+
+  
+  
+
 
   $(".spanText").css("font-size", () => {
     return `${slider.value}pt`;
