@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Courgette&family=Fredericka+the+Great&family=Frijole&family=Monoton&family=Nerko+One&family=Pacifico&family=Permanent+Marker&family=Piedra&family=Press+Start+2P&family=Ruge+Boogie&family=Syne+Mono&family=Vast+Shadow&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word</title>
+  </head>
+  <body>
+    <div id="divInput">
+      <button id="printPage" class="btn btn-warning mr-5">Print</button>
+      <input id="inpWord" type="text" placeholder="Insert the word" />
+      <!-- <label for="cars">Choose a car:</label> -->
+
+      <select id="selFontWord">
+        <!-- <option data-font="'Icons', 'Roboto', sans-serif !important;">a    ★★★</option> -->
+        <option
+          data-font="'Impact', 'Charcoal', sans-serif;"
+          value="Impact,Charcoal,sans-serif"
+        >
+          Impact
+        </option>
+        <option
+          data-font="'Cabin Sketch', cursive;"
+          value="Cabin Sketch, cursive"
+        >
+          Cabin Sketch
+        </option>
+        <option data-font="'Courgette', cursive;" value="Courgette, cursive">
+          Courgette
+        </option>
+        <option
+          data-font="'Fredericka the Great', cursive;"
+          value="Fredericka the Great, cursive"
+        >
+          Fredericka
+        </option>
+        <option data-font="'Frijole', cursive;" value="Frijole, cursive">
+          Frijole
+        </option>
+        <option data-font="'Monoton', cursive;" value="'Monoton', cursive">
+          Monoton
+        </option>
+        <option data-font="'Nerko One', cursive;" value="'Nerko One', cursive">
+          Nerco One
+        </option>
+        <option data-font="'Pacifico', cursive;" value="'Pacifico', cursive">
+          Pacifico
+        </option>
+        <option
+          data-font="'Permanent Marker', cursive;"
+          value="'Permanent Marker', cursive"
+        >
+          Permanent Market
+        </option>
+        <option data-font="'Piedra', cursive;" value="'Piedra', cursive">
+          Piedra
+        </option>
+        <option
+          data-font="'Press Start 2P', cursive;"
+          value="'Press Start 2P', cursive"
+        >
+          Press 2P
+        </option>
+        <option
+          data-font="'Ruge Boogie', cursive;"
+          value="'Ruge Boogie', cursive"
+        >
+          Ruge Boogie
+        </option>
+        <option
+          data-font="'Syne Mono', monospace;"
+          value="'Syne Mono', monospace"
+        >
+          Syne Mono
+        </option>
+        <option
+          data-font="'Vast Shadow', cursive;"
+          value="'Vast Shadow', cursive"
+        >
+          Vast Shadow
+        </option>
+        <option
+          data-font="'Yellowtail', cursive;"
+          value="'Yellowtail', cursive"
+        >
+          Yellowtail
+        </option>
+      </select>
+      <button class="btn btn-secondary" id="btnGenerateWord">
+        Generate Word
+      </button>
+      <!-- <button id="btnChangeColor">Change Color</button> -->
+      <input
+        type="range"
+        min="1"
+        max="250"
+        value="100"
+        class="slider"
+        id="myRange"
+      />
+      <span id="lblRange"></span>
+      <button class="btn btn-danger" id="btnClear">Clear</button>
+    </div>
+    <br />
+    <div id="divLabel">
+      <!-- <span id="lblWord">Hannah</span> -->
+    </div>
+    <!-- <br />
+    <button id="btnSaveWord">Save Word</button>
+    <br /> -->
+    <div id="divSaved" hidden></div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
