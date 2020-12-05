@@ -17,97 +17,68 @@
   </head>
   <body>
     <div class="container">
-      <br/>
+      <br />
       <div class="row text-center">
         <div class="col-12">
           <h3>Colorful words</h3>
         </div>
       </div>
-      <br/>
+      <br />
       <div class="row">
         <div class="col col-lg-4 col-sm-12">
           <input id="inpWord" type="text" placeholder="Insert the word" />
         </div>
         <div class="col col-lg-8 col-sm-12">
           <select id="selFontWord">
-            <option
-              data-font="'Impact', 'Charcoal', sans-serif;"
-              value="Impact,Charcoal,sans-serif"
-            >
-              Impact
-            </option>
-            <option
-              data-font="'Cabin Sketch', cursive;"
-              value="Cabin Sketch, cursive"
-            >
-              Cabin Sketch
-            </option>
-            <option data-font="'Courgette', cursive;" value="Courgette, cursive">
-              Courgette
-            </option>
-            <option
-              data-font="'Fredericka the Great', cursive;"
-              value="Fredericka the Great, cursive"
-            >
-              Fredericka
-            </option>
-            <option data-font="'Frijole', cursive;" value="Frijole, cursive">
-              Frijole
-            </option>
-            <option data-font="'Monoton', cursive;" value="'Monoton', cursive">
-              Monoton
-            </option>
-            <option data-font="'Nerko One', cursive;" value="'Nerko One', cursive">
-              Nerco One
-            </option>
-            <option data-font="'Pacifico', cursive;" value="'Pacifico', cursive">
-              Pacifico
-            </option>
-            <option
-              data-font="'Permanent Marker', cursive;"
-              value="'Permanent Marker', cursive"
-            >
+            <option value="Backbones">Backbones</option>
+            <option value="Balingkang">Balingkang</option>
+            <option value="'Cabin Sketch', cursive">Cabin Sketch</option>
+            <option value="CamiRaeRegular">Cami Rae</option>
+            <option value="CaskingCreamScript">Casking Cream</option>
+            <option value="'Courgette', cursive">Courgette</option>
+            <option value="Crackrock">Crackrock</option>
+            <option value="DontClickMeDemoRegular">Dont Click Me</option>
+            <option value="SimpleDryBrush">Dry Brush</option>
+            <option value="SimpleDryBrushItalic">Dry Brush Italic</option>
+            <option value="Eleanor">Eleanor</option>
+            <option value="'Fredericka the Great', cursive">Fredericka</option>
+            <option value="'Frijole', cursive">Frijole</option>
+            <option value="frozen">Frozen</option>
+            <option value="GoodMorning">Good Morning</option>
+            <option value="Hoffermond">Hoffermond</option>
+            <option value="HoneymoonPersonalUse">Honeymoon</option>
+            <option value="Impact,Charcoal,sans-serif">Impact</option>
+            <option value="JoyFriends">Joy Friends</option>
+            <option value="Katrine">Katrine</option>
+            <option value="Mayones">Mayones</option>
+            <option value="'Monoton', cursive">Monoton</option>
+            <option value="'Nerko One', cursive">Nerco One</option>
+            <option value="'Pacifico', cursive">Pacifico</option>
+            <option value="'Permanent Marker', cursive">
               Permanent Market
             </option>
-            <option data-font="'Piedra', cursive;" value="'Piedra', cursive">
-              Piedra
+            <option value="'Piedra', cursive">Piedra</option>
+            <option value="'Press Start 2P', cursive">Press 2P</option>
+            <option value="Raphtalia">Raphtalia</option>
+            <option value="RealMiami">RealMiami</option>
+            <option value="'Ruge Boogie', cursive">Ruge Boogie</option>
+            <option value="RustyFrozee">Rusty Frozee</option>
+            <option value="ScarletPen">Scarlet Pen</option>
+            <option value="SeaBalancePersonalUseRegular">Sea Balance</option>
+            <option value="'SelfDeceptionRegular'">
+              Self Deception Regular
             </option>
-            <option
-              data-font="'Press Start 2P', cursive;"
-              value="'Press Start 2P', cursive"
-            >
-              Press 2P
-            </option>
-            <option
-              data-font="'Ruge Boogie', cursive;"
-              value="'Ruge Boogie', cursive"
-            >
-              Ruge Boogie
-            </option>
-            <option
-              data-font="'Syne Mono', monospace;"
-              value="'Syne Mono', monospace"
-            >
-              Syne Mono
-            </option>
-            <option
-              data-font="'Vast Shadow', cursive;"
-              value="'Vast Shadow', cursive"
-            >
-              Vast Shadow
-            </option>
-            <option
-              data-font="'Yellowtail', cursive;"
-              value="'Yellowtail', cursive"
-            >
-              Yellowtail
-            </option>
+            <option value="'Syne Mono', monospace">Syne Mono</option>
+            <option value="'Vast Shadow', cursive">Vast Shadow</option>
+            <option value="'Yellowtail', cursive">Yellowtail</option>
+            <option value="YouthTouchDemoRegular">Youth Touch</option>
+            <option value="Zignature">Zignature</option>
           </select>
           <input
             id="checkBoxFrozen"
             type="checkbox"
             className="custom-control-input"
-          ></input>
+          />
           <label
             className="custom-control-label activeLabel"
             for="checkBoxFrozen"
@@ -122,14 +93,14 @@
             type="range"
             min="1"
             max="250"
-            value="50"
+            value="200"
             class="slider"
             id="myRange"
-          ></input>
+          />
           <span id="lblRange"></span>
         </div>
       </div>
-      <br/>
+      <br />
       <div class="row text-right mr-4">
         <div class="col col-lg-12 col-sm-12">
           <button class="btn btn-secondary" id="btnGenerateWord">
@@ -137,14 +108,13 @@
           </button>
           <button class="btn btn-danger" id="btnClear">Clear</button>
         </div>
-      </div>      
+      </div>
     </div>
     <br />
     <br />
-    <div id="divLabel">
-    </div>
-    <br/>
-    <br/>
+    <div id="divLabel"></div>
+    <br />
+    <br />
     <div class="text-center">
       <h3>choose your style and shoot a print screen.</h3>
       <h5>Mac: press command+shift+4 and select.</h5>

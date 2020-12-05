@@ -25,9 +25,6 @@ slider.oninput = function () {
 };
 
 $("#btnGenerateWord").on("click", () => {
-  // $("#lblWord").text("HOLA")
-  //   $("#lblWord").text($("#inpWord").val());
-  // $("btnWord").text($("inpWord").value());
   wordGenerator();
 });
 
@@ -40,24 +37,17 @@ $("#btnSaveWord").on("click", () => {
 });
 
 $("#selFontWord").change((e) => {
-  // valueText=""
   console.log("target", e.target.value);
-  // var text = document.getElementsByClassName("spanText")
   var text = document.getElementById("divLabel");
   var textSaved = document.getElementById("divSaved");
-  // text[0].style.fontFamily = "Impact,Charcoal,sans-serif"
   text.style.fontFamily = e.target.value;
-  textSaved.style.fontFamily = e.target.value;
-  // $(".spanText").css("font-family", () => {
-  //     return `${e.target.value}`;
-  //   });
+  textSaved.style.fontFamily = e.target.value;  
 });
 
 $("#btnClear").on("click", () => {
   $("#divLabel").empty();
   $("#divSaved").empty();
 });
-
 
 function wordGenerator() {
   var firstWord = $("#inpWord").val();
@@ -68,43 +58,38 @@ function wordGenerator() {
   var selected = e.checked;
   // console.log("style1", valueText.dataset.font)
   console.log("checked", selected);
+  var str = "";
+  if (!selected) {
+    for (let index = 0; index < firstWord.length; index++) {
+      const _element = firstWord[index];
+      color = "";
+      paddingLeft = "0rem";
+      // randomHSL();
+      // randomRGB();
+      generateGradient();
+      if (index == 0) {
+        paddingLeft = "5rem !important";
+      }
 
-if (!selected){
-  for (let index = 0; index < firstWord.length; index++) {
-    const _element = firstWord[index];
-    color = "";
-    // randomHSL();
-    // randomRGB();
-    generateGradient();
+      str += `<span class="spanText" style="Color: ${color};background: ${color};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: ${paddingLeft}" id="spn${_element}">${_element}<span/>`;
+    }
+
+    $("#divLabel").append(str);
+  } else {
     $("#divLabel").append(
-      `<span class="spanText" style="Color: ${color};background: ${color};
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;" id="spn${_element}">${_element}<span/>`
-    );    
-  }
-}
-else{
-  $("#divLabel").append(
-    `<span class="spanText" style="Color: ${color};background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
+      `<span class="spanText" style="Color: ${color};background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
     font-family:'frozen',serif !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;" id="spn${firstWord}">${firstWord}<span/>`
-  );
-}
-
-  
-  
-
+    );
+  }
 
   $(".spanText").css("font-size", () => {
     return `${slider.value}pt`;
   });
-
-  //   firstWord.split().forEach((_element) => {
-  //     $("#divLabel").append(
-  //       `<span class="spanText" style="Color: ${randomHSL()}" id="spn${_element}">${_element}<span/>`
-  //     );
-  //   });
 }
 
 function randomHSL() {
@@ -116,10 +101,6 @@ $("#printPage").on("click", () => {
 });
 
 function randomRGB() {
-  // var rand = Math.floor(Math.random() * 10);
-  // color = "rgb(" + (215 - rand * 3) + "," + (185 - rand * 5) + "," + (185 - rand * 10) + " )";
-  // $("body").css("background-color", colorQ);
-
   var base = 255,
     min = 56,
     max = 125;
@@ -132,7 +113,6 @@ function randomRGB() {
 
 function random(min, max) {
   return Math.random() * (max - min + 1) + min;
-  // return Math.random().nextInt(max - min + 1) + min;
 }
 
 function generateGradient() {
@@ -171,7 +151,4 @@ function generateGradient() {
     "linear-gradient(" + angle + "deg, " + newColor1 + ", " + newColor2 + ")";
 
   color = gradient;
-
-  //   document.getElementById("container").style.background = gradient;
-  //   document.getElementById("output").innerHTML = gradient;
 }

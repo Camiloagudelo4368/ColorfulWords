@@ -2,6 +2,104 @@ body {
   /* background-color:red; */
 }
 
+@font-face{
+  font-family: 'SelfDeceptionRegular';
+  src: url("./Fonts/SelfDeceptionRegular-ALLWA.ttf");
+}
+@font-face{
+  font-family: 'Backbones';
+  src: url("./Fonts/Backbones-YzAoL.ttf");
+}
+@font-face{
+  font-family: 'Balingkang';
+  src: url("./Fonts/Balingkang-erW6.ttf");
+}
+@font-face{
+  font-family: 'CamiRaeRegular';
+  src: url("./Fonts/CamiRaeRegular-l2x0.otf");
+}
+@font-face{
+  font-family: 'CaskingCreamScript';
+  src: url("./Fonts/CaskingCreamScript-z89EL.ttf");
+}
+@font-face{
+  font-family: 'Crackrock';
+  src: url("./Fonts/Crackrock-OVOW4.ttf");
+}
+@font-face{
+  font-family: 'DontClickMeDemoRegular';
+  src: url("./Fonts/DontClickMeDemoRegular-2X28.ttf");
+}
+@font-face{
+  font-family: 'Eleanor';
+  src: url("./Fonts/Eleanor-MVWpJ.ttf");
+}
+@font-face{
+  font-family: 'GoodMorning';
+  src: url("./Fonts/GoodMorning-L3304.ttf");
+}
+@font-face{
+  font-family: 'Hoffermond';
+  src: url("./Fonts/Hoffermond-4By84.ttf");
+}
+@font-face{
+  font-family: 'HoneymoonPersonalUse';
+  src: url("./Fonts/HoneymoonPersonalUse-PKGE2.ttf");
+}
+@font-face{
+  font-family: 'JoyFriends';
+  src: url("./Fonts/JoyFriends-vmg2O.ttf");
+}
+@font-face{
+  font-family: 'Katrine';
+  src: url("./Fonts/Katrine-9DX2.ttf");
+}
+@font-face{
+  font-family: 'Mayones';
+  src: url("./Fonts/Mayones-RpJy3.ttf");
+}
+@font-face{
+  font-family: 'Raphtalia';
+  src: url("./Fonts/Raphtalia-2ZmK.ttf");
+}
+@font-face{
+  font-family: 'RealMiami';
+  src: url("./Fonts/RealMiami-M6oB.ttf");
+}
+@font-face{
+  font-family: 'RustyFrozee';
+  src: url("./Fonts/RustyFrozee-vmvm9.ttf");
+}
+@font-face{
+  font-family: 'ScarletPen';
+  src: url("./Fonts/ScarletPen-yO72.ttf");
+}
+@font-face{
+  font-family: 'SeaBalancePersonalUseRegular';
+  src: url("./Fonts/SeaBalancePersonalUseRegular-YzX7y.ttf");
+}
+@font-face{
+  font-family: 'SimpleDryBrush';
+  src: url("./Fonts/SimpleDryBrush-WE6n.ttf");
+}
+@font-face{
+  font-family: 'SimpleDryBrushItalic';
+  src: url("./Fonts/SimpleDryBrushItalic-13Dg.ttf");
+}
+@font-face{
+  font-family: 'YouthTouchDemoRegular';
+  src: url("./Fonts/YouthTouchDemoRegular-4VwY.ttf");
+}
+@font-face{
+  font-family: 'Zignature';
+  src: url("./Fonts/Zignature-axAKR.ttf");
+}
+
+@font-face {
+	font-family:'frozen'; 
+	src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff');
+}
+
 #lblWord {
   font-family: "Impact", "Charcoal", sans-serif;
   font-size: 200pt;
@@ -10,13 +108,12 @@ body {
 }
 
 .spanText {
-  /* font-family: cursive;
-  font-family: fantasy, cursive;
-  font-family: Trattatello, fantasy;
-  font-family: Snell Roundhand, cursive; */
-  font-size: 50pt;
-  /* color: blue; */
+  font-size: 200pt;
   font-weight: 600;
+  width: 20rem;
+  height: 100%;
+  padding: 5rem 1rem 5rem 0rem;
+  background-color: transparent;
 }
 
 #divLabel {
@@ -26,7 +123,6 @@ body {
 #divSaved {
   padding-left: 2rem;
   text-align: left;
-  /* line-height: 5rem;     */
 }
 
 #inpWord {
@@ -36,7 +132,6 @@ body {
 
 #selFontWord {
   width: 85%;
-  /* height: 30px !important; */
 }
 
 #divInput {
